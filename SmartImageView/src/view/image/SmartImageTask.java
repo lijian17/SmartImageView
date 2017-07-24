@@ -33,11 +33,20 @@ public class SmartImageTask implements Runnable {
 		 * 
 		 * @param bitmap
 		 */
-		private void onComplete(Bitmap bitmap) {
+		public void onComplete(Bitmap bitmap) {
 		}
 	}
 
+	/**
+	 * 图片设置到ImageView完成时的监听
+	 * 
+	 * @author lijian-pc
+	 * @date 2017-7-24 下午5:21:22
+	 */
 	public abstract static class OnCompleteListener {
+		/**
+		 * 图片设置到ImageView完成时的回调
+		 */
 		public abstract void onComplete();
 
 		/**
